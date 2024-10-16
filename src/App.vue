@@ -7,4 +7,4 @@ import Tarjeta from './components/Tarjeta.vue';
     <Tarjeta nombre="Producto 2" descripcion="Esta es mi descripcion 2" />
 </template>
 
-<style scoped></style>
+<style scoped></style> 
