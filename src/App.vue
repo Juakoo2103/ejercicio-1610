@@ -1,5 +1,6 @@
 <script>
 import Avatar from "./components/Avatar.vue";
+import Tarjeta from './components/Tarjeta.vue';
 
 export default {
   components: {
@@ -15,6 +16,9 @@ export default {
       :tamaño="100"
     />
   </div>
+  <Tarjeta nombre="Producto 1" descripcion="Esta es mi descripcion 1" />
+    <Tarjeta nombre="Producto 2" descripcion="Esta es mi descripcion 2" />
 </template>
 
 <style scoped></style>
+
