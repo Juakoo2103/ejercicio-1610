@@ -1,30 +1,24 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import Avatar from "./components/Avatar.vue";
+import Tarjeta from './components/Tarjeta.vue';
+
+export default {
+  components: {
+    Avatar,
+  },
+};
 </script>
 
 <template>
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <Avatar
+      url="https://media.istockphoto.com/id/2015429231/vector/vector-flat-illustration-in-black-color-avatar-user-profile-person-icon-profile-picture.jpg?s=612x612&w=0&k=20&c=Wu70OARg2npxWy5E22_ZLneabuTafvV_6avgYPhWOoU="
+      :tamaño="100"
+    />
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <Tarjeta nombre="Producto 1" descripcion="Esta es mi descripcion 1" />
+    <Tarjeta nombre="Producto 2" descripcion="Esta es mi descripcion 2" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<style scoped></style>
+
